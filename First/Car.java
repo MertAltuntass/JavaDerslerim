@@ -7,6 +7,7 @@ public class Car extends Vehicle implements IBody,IEngine {
 	
 	public Car(String make, String model, int year,int numPlate) {
 		super(make, model, year);
+		this.numPlate=numPlate;
 		
 	}
 
@@ -18,7 +19,7 @@ public class Car extends Vehicle implements IBody,IEngine {
 
 	@Override
 	public void getTransission() {
-		System.out.println();
+		System.out.println(this.transmission);
 		
 	}
 
@@ -31,13 +32,18 @@ public class Car extends Vehicle implements IBody,IEngine {
 
 	@Override
 	public void getColor() {
-		System.out.println();
+		System.out.println(this.color);
 		
 	}
 
 	@Override
 	void showVehicle() {
-		System.out.println();
+		System.out.println(this.make);
+		System.out.println(this.model);
+		System.out.println(this.color);
+		System.out.println(this.transmission);
+		System.out.println(this.year);
+		System.out.println(this.numPlate);
 		
 	}
 	
