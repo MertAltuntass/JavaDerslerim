@@ -44,6 +44,7 @@ public class Car extends Vehicle implements IBody,IEngine {
 		System.out.println(this.transmission);
 		System.out.println(this.year);
 		System.out.println(this.numPlate);
+		//mert
 		
 	}
 	
